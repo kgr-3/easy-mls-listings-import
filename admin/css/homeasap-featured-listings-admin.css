@@ -1,0 +1,456 @@
+#wp-homeasap-featured-listings-admin .wrap { max-width: 1200px; }
+	
+#wp-homeasap-featured-listings-admin .wrap h1 { font-weight: bold; }
+#wp-homeasap-featured-listings-admin .wrap h2 { padding-top:0px; margin-bottom:0px; font-weight: bold; }
+	
+#wp-homeasap-featured-listings-admin .wrap p { font-size:15px; }
+#wp-homeasap-featured-listings-admin .wrap p.copyright { font-size:13px; color: #999; }
+	
+#wp-homeasap-featured-listings-admin .wrap hr { margin: 30px 0 24px 0; border-top: 1px dashed #EAEAEA; }
+			
+#wp-homeasap-featured-listings-admin .wrap code {
+	background-color: #EAEAEA;
+	border: 6px solid #EAEAEA;
+	border-radius:4px;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .card {
+	max-width: 100%;
+	padding: 20px;
+	margin-bottom: 30px;
+	border-radius:10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+	-webkit-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+	-moz-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+}
+
+
+/* -- AGENT SEARCH TOOL -- */
+
+input#homeasap-featured-listings-agent-search {
+    min-width: 200px;
+    height: 39px;
+    border-radius: 3px;
+    border: 1px solid #5d9ed6;
+    padding: 0 13px;
+}
+input#homeasap-featured-listings-agent-search::placeholder {
+	font-size: 15px;
+}
+#wp-homeasap-featured-listings-admin .wrap span.dashicons.dashicons-search {
+	margin-top: 10px;
+    margin-left: -34px;
+}
+	
+
+/* -- ADVANCED OPTIONS TABLE STYLES -- */
+
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card {
+	max-width:100%;
+	margin-bottom: 30px;	
+    border-radius:10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+	-webkit-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+	-moz-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table, #wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card tr, #wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card td {
+	border: none !important;
+}
+    
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table {
+	width: 100%;
+	text-align: left;
+    border-radius:10px;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+    -webkit-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 2px 12px rgba(0,0,0,0.06);
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table td, #wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table th {
+    border: 1px solid #AAAAAA;
+    padding: 12px 20px;
+    line-height: 155%;
+}
+
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead {
+  	background: #444444 !important;
+  	border-bottom: 2px solid #212121;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card  table thead td {
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF !important;
+}
+
+@media only screen and (min-width: 600px) {
+	#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td.col-1 { width: 15%; }
+	#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td.col-2 { width: 45%; }
+	#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td.col-3 { width: 20%; }
+	#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td.col-4 { width: 20%; }
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td:first-child {
+    border-top-left-radius: 10px;
+  	border-right: 2px solid #212121;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table thead td:last-child {
+    border-top-right-radius: 10px;
+  	border-left: 1px solid #212121;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody td {
+  	font-size: 15px;
+}
+
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody tr td code {
+		display: inline-block;
+		font-size: 12px;
+		margin-bottom: 4px;
+		padding: 0 2px;
+    line-height: 12px;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody tr:nth-child(even) {
+  	background: #FFFFFF;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody tr:nth-child(odd) {
+  	background: #F1F1F1;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody tr.bottom td:first-child {
+    border-bottom-left-radius: 10px;
+}
+	
+#wp-homeasap-featured-listings-admin .wrap .adv-options .adv-card table tbody tr.bottom td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* -- These styles have to be on root level since they are for the autocomplete that is not in our div -- */
+.homeasap-featured-listings-agent-search-li {
+	height: 20px;
+	padding: 4px 10px;
+	margin-bottom: 0;
+	white-space: nowrap;
+	text-align: left;
+	cursor: pointer;
+}
+
+.homeasap-featured-listings-agent-search-li img{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 7px;
+	float: left;
+}
+
+.homeasap-featured-listings-agent-search-li span{
+	white-space: nowrap;
+	line-height: 20px;
+	float: left;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	border: 1px solid #5b9dd9;
+	box-shadow: 0 1px 2px rgba(30,140,190,.8);
+	background-color: #fff;
+}
+
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: 0;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	cursor: pointer;
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+.ui-menu .ui-menu-item-wrapper {
+	position: relative;
+	padding: 3px 1em 3px .4em;
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	margin: -1px;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item-wrapper {
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	left: auto;
+	right: 0;
+}
+
+
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em/*{fsDefault}*/;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em;
+}
+.ui-widget.ui-widget-content {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd/*{borderColorContent}*/;
+	background: #ffffff/*{bgColorContent}*/ /*{bgImgUrlContent}*/ /*{bgContentXPos}*/ /*{bgContentYPos}*/ /*{bgContentRepeat}*/;
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-content a {
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-header {
+	border: 1px solid #dddddd/*{borderColorHeader}*/;
+	background: #e9e9e9/*{bgColorHeader}*/ /*{bgImgUrlHeader}*/ /*{bgHeaderXPos}*/ /*{bgHeaderYPos}*/ /*{bgHeaderRepeat}*/;
+	color: #333333/*{fcHeader}*/;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #333333/*{fcHeader}*/;
+}
+
+/* Interaction states
+----------------------------------*/
+.-suitate-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+	background: #f6f6f6/*{bgColorDefault}*/ /*{bgImgUrlDefault}*/ /*{bgDefaultXPos}*/ /*{bgDefaultYPos}*/ /*{bgDefaultRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #454545/*{fcDefault}*/;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+	color: #454545/*{fcDefault}*/;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+	border: 1px solid #cccccc/*{borderColorHover}*/;
+	background: #ededed/*{bgColorHover}*/ /*{bgImgUrlHover}*/ /*{bgHoverXPos}*/ /*{bgHoverYPos}*/ /*{bgHoverRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #2b2b2b/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
+	color: #2b2b2b/*{fcHover}*/;
+	text-decoration: none;
+}
+
+.ui-visual-focus {
+	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #003eff/*{borderColorActive}*/;
+	background: #007fff/*{bgColorActive}*/ /*{bgImgUrlActive}*/ /*{bgActiveXPos}*/ /*{bgActiveYPos}*/ /*{bgActiveRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #ffffff/*{fcActive}*/;
+}
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
+	border: #003eff/*{borderColorActive}*/;
+	background-color: #ffffff/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff/*{fcActive}*/;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/ /*{bgImgUrlHighlight}*/ /*{bgHighlightXPos}*/ /*{bgHighlightYPos}*/ /*{bgHighlightRepeat}*/;
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-checked {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #f1a899/*{borderColorError}*/;
+	background: #fddfdf/*{bgColorError}*/ /*{bgImgUrlError}*/ /*{bgErrorXPos}*/ /*{bgErrorYPos}*/ /*{bgErrorRepeat}*/;
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 3px/*{cornerRadius}*/;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa/*{bgColorOverlay}*/ /*{bgImgUrlOverlay}*/ /*{bgOverlayXPos}*/ /*{bgOverlayYPos}*/ /*{bgOverlayRepeat}*/;
+	opacity: .3/*{opacityOverlay}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/; /* support: IE8 */
+}
+.ui-widget-shadow {
+	-webkit-box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+	box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+}
